@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sanchez:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'League Spartan';
+    --font3:  "Red Hat Display", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-family: var(--font2);
+    font-size: 10vw;
+    font-weight: bold;
+    background: linear-gradient(to right, orange, blue);
+    -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+}
+
+header > p {
+    padding-bottom: 50px;
+    font-family: var(--font1);
+    font-size: 1.4em;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    text-align: center;
+    padding: 10vh 0px 10vh 30px;
+    font-family: var(--font3);
+    font-size: 2.5em;
+    line-height: 2em;
+}
+
+section > p {
+    margin-bottom: 70px;
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.normal > p {
+    margin-top: 80px;
+}
+
+section.normal > h1 {
+    background: linear-gradient(to right, orange, blue);
+    -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+}
+
+.comprar-ipad {
+    color: black;
+    border: 2px solid black;
+    padding: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 60px;
+}
+
+.comprar-ipad:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.171);
+}
+
+.aside-normal {
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside-normal > div {
+    margin: 0px 40px 70px 40px;
+}
+
+.aside-normal p {
+    font-size: 20px;
+}
+
+.aside-normal a {   
+    color: rgb(0, 38, 255);   
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.aside-normal a:hover {
+    text-decoration: underline;
+}
+
+section.image {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
+    display: flex;
+    justify-content: right;
+}
+
+section.image > p {
+    width: 35vw;
+    margin: 200px 0px 200px 0px;
+    padding: 15px;
+}
+
+section#img01 {
+    background: url(../imagens/img01.jpg) right center/cover no-repeat fixed;
+}
+
+section#img02 {
+    background: url(../imagens/img02.jpg) center center/cover no-repeat fixed;
+    height: 80vh;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
